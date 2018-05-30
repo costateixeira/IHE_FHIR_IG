@@ -1,0 +1,19 @@
+﻿<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../schema/fhir-single.xsd">
+<p style="text-align: center;"><strong>Integrating the Healthcare Enterprise</strong></p>
+
+<table style="margin-left: auto; margin-right: auto; width: 172px;">
+<tbody>
+<tr>
+<td style="width: 172px; text-align: center;"><p style="text-align: center;"><img src="./image1.jpeg" style="text-align: center; display: block;margin-left: auto; margin-right: auto" /></p></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;"><strong>IHE &lt;Domain Name&gt;</strong></p>
+<p style="text-align: center;"><strong>Technical Framework Supplement</strong></p>
+<p style="text-align: center;"><strong>&lt;Profile Name</strong></p>
+<p style="text-align: center;"><strong>(Profile Acronym) &gt;</strong></p>
+<p style="text-align: center;">HL7<sup>®</sup> FHIR<sup>®</sup> STU x</p>
+<p style="text-align: center;">Using Resources at FMM Level n-n</p>
+<p style="text-align: center;"><strong><br />
+</strong></p>
+</div>

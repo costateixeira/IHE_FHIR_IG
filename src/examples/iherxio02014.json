@@ -1,0 +1,63 @@
+{
+	"resourceType" : "MedicationRequest",
+	"id" : "iherxio02014",
+	"meta" : {
+		"tag" : [{
+				"code" : "ihe"
+			}
+		]
+	},
+	"identifier" : [{
+			"value" : "iherxio02014"
+		}
+	],
+	"definition" : [{
+			"reference" : "ActivityDefinition/example"
+		}
+	],
+	"basedOn" : [{
+			"reference" : "MedicationRequest/iherx002"
+		}, {
+			"reference" : "CarePlan/ihe_careplan_002"
+		}
+	],
+	"groupIdentifier" : {
+		"value" : "540593484"
+	},
+	"status" : "draft",
+	"intent" : "instance-order",
+	"medicationReference" : {
+		"reference" : "Medication/ihemed0181"
+	},
+	"subject" : {
+		"reference" : "Patient/ihepat0222",
+		"display" : "Marco Medici"
+	},
+	"authoredOn" : "2017-02-08",
+	"dosageInstruction" : [{
+			"sequence" : 1,
+			"text" : "single dose",
+			"timing" : {
+				"event" : ["2017-08-17"],
+				"repeat" : {
+					"count" : 1,
+					"when" : ["PCD"]
+				}
+			},
+			"route" : {
+				"coding" : [{
+						"system" : "http://snomed.info/sct",
+						"code" : "255559005",
+						"display" : "Oral"
+					}
+				]
+			},
+			"doseQuantity" : {
+				"value" : 1,
+				"unit" : "tablet",
+				"system" : "https://standardterms.edqm.eu/browse/get_concepts/UOP",
+				"code" : "tb"
+			}
+		}
+	]
+}

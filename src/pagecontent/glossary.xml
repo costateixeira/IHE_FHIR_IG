@@ -1,0 +1,45 @@
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+     xsi:schemaLocation="http://hl7.org/fhir ../../../../schema/fhir-single.xsd">
+   <div>
+      <a name="Glossary"/>
+      <table class="table table-bordered table-striped table-bordered">
+         <tbody>
+            <tr xmlns="">
+               <th width="275">Term</th>
+               <th>Definition</th>
+            </tr>
+            <tr xmlns="">
+               <td width="275">Administration Request</td>
+               <td>An instruction for a single medication administration event. For example, a request to “administer paracetamol to patient X on 1/7, at 13:00”. An administration request does not expect any further action (such as dispensing), only the administration.
+One event can also include several units at the same time (e.g., give paracetamol to patient X - 2 tablets at 3 pm”, even different medications (e.g., “give drug A and drug B mixed together to patient X – 1 each at 3 pm ”)</td>
+            </tr>
+            <tr xmlns="">
+               <td width="275">Administration Report</td>
+               <td>The information about an actual administration event or act. For example, a report that “1 tablet of paracetamol was given to patient X at 13:45”. The administration report is for one single administration act.</td>
+            </tr>
+            <tr xmlns="">
+               <td width="275">Single Point in time administration </td>
+               <td>An administration that happens in one single point in time, i.e., instantaneously, or that does not take a measurable amount of time. For example, giving or taking a tablet.</td>
+            </tr>
+            <tr xmlns="">
+               <td width="275">Continuous administration</td>
+               <td>An administration that takes a measurable amount of time, for example an infusion.</td>
+            </tr>
+            <tr xmlns="">
+               <td width="275">Simple interval administration</td>
+               <td>A specific case of continuous administration where the parameters of the administration remain constant (or are changes are not considered relevant) during the entire interval. For example, one administration at a fixed rate for a given amount of time.</td>
+            </tr>
+            <tr xmlns="">
+               <td width="275">Complex interval administration</td>
+               <td>A specific case of continuous administration where the parameters of the administration are changed and those changes are considered relevant. For example, one administration that starts at one rate and then is changed to another rate, or when there is a change in the solvent and is important to capture that change.</td>
+            </tr>
+            <tr xmlns="">
+               <td width="275">PRN</td>
+               <td>Pro Re Nata – Medication that should be administered as needed or as the situation arises. It represents an administration of prescribed medication whose timing is left to the patient, nurse or caregiver, as opposed to medication that is to be taken according to a fixed schedule. This does not imply that the patient may take as much of the medicine as desired, but rather that the medicine may be taken in the prescribed dosage if needed.</td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+</div>

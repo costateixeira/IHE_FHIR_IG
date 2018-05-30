@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../schema/fhir-single.xsd">
+	<id value="ihe_ig"/>
+	<url value="http://ihe.net/fhir/profiles/mma/ImplementationGuide/ihe_ig"/>
+	<name value="IHE Profile Template"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<publisher value="myself"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://www.acme.com"/>
+		</telecom>
+	</contact>
+	<description value="Lorem Ipsum ..."/>
+	<jurisdiction>
+		<coding>
+			<system value="urn:iso:std:iso:3166"/>
+			<code value="US"/>
+		</coding>
+	</jurisdiction>
+	<packageId value="ihe.pdqm"/> 
+	<license value="Apache-2.0"/> 
+ 	<fhirVersion value="3.4.0"/>
+	
+	
+	<definition>
+		<package>
+			<name value="Profiles"/>
+			<description value="Constraints on resources"/>
+		</package>
+		<package>
+			<name value="Conformance Statements"/>
+			<description value="Conformance statements for each actor"/>
+		</package>
+		<resource>
+			<reference>
+			<reference value="StructureDefinition/administration-report"/>
+			</reference>
+			<name value="Medication Administration Report"/>
+			<description value="Medication Administration Report"/>
+			<exampleBoolean value="false"/>
+			<package value="Profiles"/>
+		</resource>
+		<resource>
+			<reference>
+			<reference value="StructureDefinition/administration-request"/>
+			</reference>
+			<name value="Administration Request"/>
+			<description value="Administration Request"/>
+			<exampleBoolean value="false"/>
+			<package value="Profiles"/>
+		</resource>
+		<resource>
+			<reference>
+			<reference value="CapabilityStatement/ihe-mma-requestplacer"/>
+			</reference>
+			<name value="Medication Administration Request Placer"/>
+			<description value="Medication Administration Request Placer"/>
+			<exampleBoolean value="false"/>
+			<package value="Conformance Statements"/>
+		</resource> 
+		<resource>
+			<reference>
+			<reference value="CapabilityStatement/ihe-mma-performer"/>
+			</reference>
+			<name value="Medication Administration Performer"/>
+			<description value="Medication Administration Performer"/>
+			<exampleBoolean value="false"/>
+			<package value="Conformance Statements"/>
+		</resource> 
+		<resource>
+			<reference>
+			<reference value="CapabilityStatement/ihe-mma-informer"/>
+			</reference>
+			<name value="Medication Administration Informer"/>
+			<description value="Medication Administration Informer"/>
+			<exampleBoolean value="false"/>
+			<package value="Conformance Statements"/>
+		</resource> 
+		<resource>
+			<reference>
+			<reference value="CapabilityStatement/ihe-mma-consumer"/>
+			</reference>
+			<name value="Medication Administration Consumer"/>
+			<description value="Medication Administration Consumer"/>
+			<exampleBoolean value="false"/>
+			<package value="Conformance Statements"/>
+		</resource>
+		<resource>
+			<reference>
+			<reference value="CapabilityStatement/ihe-pdqm-client"/>
+			</reference>
+			<name value="PDQm - Client"/>
+			<description value="PDQm Consumer"/>
+			<exampleBoolean value="false"/>
+			<package value="Conformance Statements"/>
+		</resource>
+		<resource>
+			<reference>
+			<reference value="CapabilityStatement/ihe-pdqm-server"/>
+			</reference>
+			<name value="PDQm - Server"/>
+			<description value="PDQm Server"/>
+			<exampleBoolean value="false"/>
+			<package value="Conformance Statements"/>
+		</resource>
+
+
+		<page>
+			<nameUrl value="toc.html"/>
+			<title value="Table of Contents"/>
+			<generation value="html"/>
+			<page>
+				<nameUrl value="index.html"/>
+				<title value="=Profile= Home Page"/>
+				<generation value="html"/>
+				<page>
+					<nameUrl value="howto.html"/>
+					<title value="How to read and use this suplement"/>
+					<generation value="html"/>
+				</page>
+				<page>
+					<nameUrl value="openissues.html"/>
+					<title value="Open Issues, Questions, Feedback"/>
+					<generation value="html"/>
+				</page>
+				<page>
+					<nameUrl value="introduction.html"/>
+					<title value="Introduction to this supplement"/>
+					<generation value="html"/>
+				</page>
+			</page>
+
+
+		
+			<page>
+				<nameUrl value="sharedresources.html"/>
+				<title value="Shared Resources introduced or changed in this supplement"/>
+				<generation value="html"/>
+				<page>
+					<nameUrl value="actors.html"/>
+					<title value="Actors"/>
+					<generation value="html"/>
+				</page>
+				<page>
+					<nameUrl value="transactions.html"/>
+					<title value="Transactions"/>
+					<generation value="html"/>
+				</page>
+			</page>
+
+		
+			<page>
+				<nameUrl value="vol1.html"/>
+				<title value="Volume 1"/>
+				<generation value="html"/>
+				<page>
+					<nameUrl value="copyright.html"/>
+					<title value="Copyright"/>
+					<generation value="html"/>
+				</page>
+
+				<page>
+					<nameUrl value="profile.html"/>
+					<title value="=Profile Name="/>
+					<generation value="html"/>
+				</page>
+
+				<page>
+					<nameUrl value="actorstransactionscontent.html"/>
+					<title value="=Profile Acronym= Actors, Transactions and Content Modules"/>
+					<generation value="html"/>
+					<page>
+						<nameUrl value="wf_actorstransactions.html"/>
+						<title value="Actors and Transactions"/>
+						<generation value="html"/>
+					</page>
+					<page>
+						<nameUrl value="ct_actorstransactions.html"/>
+						<title value="Actors and Transactions"/>
+						<generation value="html"/>
+					</page>
+				</page>
+
+				<page>
+					<nameUrl value="examples.html"/>
+					<title value="Use Cases"/>
+					<generation value="html"/>
+				</page>
+				
+			</page>
+
+			
+			
+			<page>
+				<nameUrl value="vol2.html"/>
+				<title value="Volume 2"/>
+				<generation value="html"/>
+				<page>
+					<nameUrl value="capstatement.html"/>
+					<title value="Capability"/>
+					<generation value="html"/>
+				</page>
+				<page>
+					<nameUrl value="artifacts.html"/>
+					<title value="Artifact List"/>
+					<generation value="html"/>
+				</page>
+				<page>
+					<nameUrl value="downloads.html"/>
+					<title value="Downloads"/>
+					<generation value="html"/>
+				</page>
+			</page>
+			
+<!--
+			<page>
+				<nameUrl value="vol2.html"/>
+				<title value="Volume 2"/>
+				<generation value="html"/>
+				<page>
+					<nameUrl value="capstatement.html"/>
+					<title value="Capability"/>
+					<generation value="html"/>
+				</page>
+				<page>
+					<nameUrl value="artifacts.html"/>
+					<title value="Artifact List"/>
+					<generation value="html"/>
+				</page>
+				<page>
+					<nameUrl value="downloads.html"/>
+					<title value="Downloads"/>
+					<generation value="html"/>
+				</page>
+			</page>
+
+		
+-->			
+		
+		</page>
+		
+	
+		
+		
+		
+
+	</definition>	
+</ImplementationGuide>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2017-07-08T10:41:34.302-05:00" />
+  </meta>
+  <url value="http://ihe.net/fhir/ImplementationGuide/PDQm" />
+  <name value="PDQm" />
+  <status value="draft" />
+  <date value="2017-07-06T15:23:38.905599-05:00" />
+  <publisher value="IHE" />
+  <contact>
+    <name value="John Moehrke" />
+  </contact>
+  <description value="Implementation Guide for IHE PDQm profile" />
+  <copyright value="IHE" />
+  <fhirVersion value="3.0.1" />
+  <package>
+    <name value="MyPackage" />
+    <resource>
+      <name value="Patient" />
+      <sourceUri value="http://ihe.net/fhir/profile/StructureDefinition/PDQm" />
+    </resource>
+  </package>
+</ImplementationGuide>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2017-08-04T12:49:48.223-05:00" />
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pa" />
+  </extension>
+  <url value="http://ihe.net/fhir/StructureDefinition/PDQmPatient" />
+  <name value="PDQmPatent" />
+  <title value="IHE Patient Demographics Query for Mobile" />
+  <status value="draft" />
+  <date value="2017-07-05T12:48:59.9715386-05:00" />
+  <publisher value="IHE" />
+  <contact>
+    <name value="John Moehrke" />
+  </contact>
+  <description value="&#xD;&#xA;" />
+  <purpose value="Lightweight RESTful query interface to a patient demographics supplier." />
+  <copyright value="IHE" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Patient" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Patient" />
+  <derivation value="constraint" />
+</StructureDefinition>

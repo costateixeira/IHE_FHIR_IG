@@ -1,0 +1,19 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../schema/fhir-single.xsd">
+   <p> This page presents some use cases.</p>
+   <div id="segment-content" class="segment">
+      <div class="container">
+         <div class="row">
+            <div class="inner-wrapper">
+               <div class="col-12"><br></br><ul>
+                     <li>
+                        <p><b><a href="examplescenario-mma1-scenario.html">Example 1</a></b></p>
+                     </li>
+                     <p>Insert Lorem Ipsum here.
+                     </p>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

@@ -1,0 +1,63 @@
+{
+	"resourceType" : "MedicationRequest",
+	"id" : "iherxio01009",
+	"meta" : {
+		"tag" : [{
+				"code" : "ihe"
+			}
+		]
+	},
+	"identifier" : [{
+			"value" : "iherxio01009"
+		}
+	],
+	"definition" : [{
+			"reference" : "ActivityDefinition/example"
+		}
+	],
+	"basedOn" : [{
+			"reference" : "MedicationRequest/iherx001"
+		}, {
+			"reference" : "CarePlan/ihe_careplan_001"
+		}
+	],
+	"groupIdentifier" : {
+		"value" : "983939393"
+	},
+	"status" : "draft",
+	"intent" : "instance-order",
+	"medicationReference" : {
+		"reference" : "Medication/ihemed0171"
+	},
+	"subject" : {
+		"reference" : "Patient/ihepat0111",
+		"display" : "Phil Philips"
+	},
+	"authoredOn" : "2017-02-08",
+	"dosageInstruction" : [{
+			"sequence" : 1,
+			"text" : "single dose",
+			"timing" : {
+				"event" : ["2017-08-15"],
+				"repeat" : {
+					"count" : 1,
+					"when" : ["PCV"]
+				}
+			},
+			"route" : {
+				"coding" : [{
+						"system" : "http://snomed.info/sct",
+						"code" : "255559005",
+						"display" : "Oral"
+					}
+				]
+			},
+			"doseQuantity" : {
+				"value" : 1,
+				"unit" : "tablet",
+				"system" : "https://standardterms.edqm.eu/browse/get_concepts/UOP",
+				"code" : "tb"
+			}
+		}
+	]
+}

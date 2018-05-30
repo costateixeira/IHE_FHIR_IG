@@ -1,0 +1,139 @@
+
+{
+  "resourceType" : "CapabilityStatement",
+  "id" : "ihe-PDQm-server",
+  "url" : "http://ihe.net/fhir/profiles/mma/CapabilityStatement/ihe-PDQm-server",
+  "name" : "IHE PDQm - Source",
+  "title" : "IHE ITI Patient Demographics Query for Mobile (PDQm) - server",
+
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2017-08-18T00:00:00-05:00",
+  "publisher" : "IHE",
+  "description" : "Requirements capability statement for PDQm profile compliance",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }
+      ]
+    }
+  ],
+  "copyright" : "IHE",
+  "kind" : "requirements",
+  "fhirVersion" : "STU3",
+  "format" : [
+    "application/fhir+xml",
+    "application/fhir+json"
+  ],
+  "rest" : [
+    {
+      "mode" : "server",
+      "documentation" : "PDQm server provides capability to query for Patient resources matching a sub-set of the FHIR core Patient resource query parameters",
+      "security" : {
+        "cors" : false,
+        "description" : "Recommend IUA or SMART"
+      },
+      "resource" : [
+        {
+          "type" : "Patient",
+          "interaction" : [
+            {
+              "code" : "read"
+            },
+            {
+              "code" : "vread"
+            },
+            {
+              "code" : "search-type"
+            },
+            {
+              "code" : "history-instance"
+            }
+          ],
+          "searchParam" : [
+            {
+              "name" : "_id",
+              "definition" : "http://hl7.org/fhir/SearchParameter/Patient-_id",
+              "type" : "token",
+              "documentation" : "Logical id of this artifact"
+            },
+            {
+              "name" : "active",
+              "definition" : "http://hl7.org/fhir/SearchParameter/Patient-active",
+              "type" : "token",
+              "documentation" : "Whether the patient record is active"
+            },
+            {
+              "name" : "address-city",
+              "definition" : "http://hl7.org/fhir/SearchParameter/Patient-address-city",
+              "type" : "string",
+              "documentation" : "A city specified in an address"
+            },
+            {
+              "name" : "address-country",
+              "definition" : "http://hl7.org/fhir/SearchParameter/Patient-address-country",
+              "type" : "string",
+              "documentation" : "A country specified in an address"
+            },
+            {
+              "name" : "address-postalcode",
+              "definition" : "http://hl7.org/fhir/SearchParameter/Patient-address-postalcode",
+              "type" : "string",
+              "documentation" : "A postalCode specified in an address"
+            },
+            {
+              "name" : "address-state",
+              "definition" : "http://hl7.org/fhir/SearchParameter/Patient-address-state",
+              "type" : "string",
+              "documentation" : "A state specified in an address"
+            },
+            {
+              "name" : "birthdate",
+              "definition" : "http://hl7.org/fhir/SearchParameter/Patient-birthdate",
+              "type" : "date",
+              "documentation" : "The patient's date of birth"
+            },
+            {
+              "name" : "family",
+              "definition" : "http://hl7.org/fhir/SearchParameter/Patient-family",
+              "type" : "string",
+              "documentation" : "A portion of the family name of the patient"
+            },
+            {
+              "name" : "gender",
+              "definition" : "http://hl7.org/fhir/SearchParameter/Patient-gender",
+              "type" : "token",
+              "documentation" : "Gender of the patient"
+            },
+            {
+              "name" : "given",
+              "definition" : "http://hl7.org/fhir/SearchParameter/Patient-given",
+              "type" : "string",
+              "documentation" : "A portion of the given name of the patient"
+            },
+            {
+              "name" : "identifier",
+              "definition" : "http://hl7.org/fhir/SearchParameter/Patient-identifier",
+              "type" : "token",
+              "documentation" : "A patient identifier"
+            },
+            {
+              "name" : "telecom",
+              "definition" : "http://hl7.org/fhir/SearchParameter/Patient-telecom",
+              "type" : "token",
+              "documentation" : "The value in any kind of telecom details of the patient"
+            }
+          ]
+        }
+      ],
+      "interaction" : [
+        {
+          "code" : "search-system"
+        }
+      ]
+    }
+  ]
+}

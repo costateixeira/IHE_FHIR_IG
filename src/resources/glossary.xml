@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Jose Costa Teixeira</Author>
+  <LastAuthor>Jose Costa Teixeira</LastAuthor>
+  <Created>2017-11-19T06:52:14Z</Created>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>8520</WindowHeight>
+  <WindowWidth>27042</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s75">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Glossary">
+  <Table ss:ExpandedColumnCount="8" ss:ExpandedRowCount="8" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="50.4"
+   ss:DefaultRowHeight="14.475000000000001">
+   <Column ss:Width="160.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="87.6"/>
+   <Column ss:Index="6" ss:AutoFitWidth="0" ss:Width="40.200000000000003"/>
+   <Column ss:AutoFitWidth="0" ss:Width="178.8"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Term</Data></Cell>
+    <Cell><Data ss:Type="String">Owner</Data></Cell>
+    <Cell><Data ss:Type="String">Status</Data></Cell>
+    <Cell><Data ss:Type="String">Acronym</Data></Cell>
+    <Cell><Data ss:Type="String">Source</Data></Cell>
+    <Cell><Data ss:Type="String">URL</Data></Cell>
+    <Cell><Data ss:Type="String">Definition</Data></Cell>
+    <Cell><Data ss:Type="String">Descriptive Example</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Administration Request</Data></Cell>
+    <Cell><Data ss:Type="String">IHE Pharmacy</Data></Cell>
+    <Cell><Data ss:Type="String">Proposed</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s75"><Data ss:Type="String">An instruction for a single medication administration event. For example, a request to “administer paracetamol to patient X on 1/7, at 13:00”. An administration request does not expect any further action (such as dispensing), only the administration.&#10;One event can also include several units at the same time (e.g., give paracetamol to patient X - 2 tablets at 3 pm”, even different medications (e.g., “give drug A and drug B mixed together to patient X – 1 each at 3 pm ”)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Administration Report</Data></Cell>
+    <Cell><Data ss:Type="String">IHE Pharmacy</Data></Cell>
+    <Cell><Data ss:Type="String">Proposed</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="String">The information about an actual administration event or act. For example, a report that “1 tablet of paracetamol was given to patient X at 13:45”. The administration report is for one single administration act.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Single Point in time administration </Data></Cell>
+    <Cell><Data ss:Type="String">IHE Pharmacy</Data></Cell>
+    <Cell><Data ss:Type="String">Proposed</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="String">An administration that happens in one single point in time, i.e., instantaneously, or that does not take a measurable amount of time. For example, giving or taking a tablet.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Continuous administration</Data></Cell>
+    <Cell><Data ss:Type="String">IHE Pharmacy</Data></Cell>
+    <Cell><Data ss:Type="String">Proposed</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="String">An administration that takes a measurable amount of time, for example an infusion.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Simple interval administration</Data></Cell>
+    <Cell><Data ss:Type="String">IHE Pharmacy</Data></Cell>
+    <Cell><Data ss:Type="String">Proposed</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="String">A specific case of continuous administration where the parameters of the administration remain constant (or are changes are not considered relevant) during the entire interval. For example, one administration at a fixed rate for a given amount of time.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Complex interval administration</Data></Cell>
+    <Cell><Data ss:Type="String">IHE Pharmacy</Data></Cell>
+    <Cell><Data ss:Type="String">Proposed</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="String">A specific case of continuous administration where the parameters of the administration are changed and those changes are considered relevant. For example, one administration that starts at one rate and then is changed to another rate, or when there is a change in the solvent and is important to capture that change.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">PRN</Data></Cell>
+    <Cell><Data ss:Type="String">IHE Pharmacy</Data></Cell>
+    <Cell><Data ss:Type="String">Proposed</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="String">Pro Re Nata – Medication that should be administered as needed or as the situation arises. It represents an administration of prescribed medication whose timing is left to the patient, nurse or caregiver, as opposed to medication that is to be taken according to a fixed schedule. This does not imply that the patient may take as much of the medicine as desired, but rather that the medicine may be taken in the prescribed dosage if needed.</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>14</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

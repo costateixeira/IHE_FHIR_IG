@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="administration-request"/>
+  <url value="http://ihe.net/fhir/profiles/mma/StructureDefinition/administration-request" />
+  <name value="AdministrationRequest" />
+  <status value="draft" />
+  <date value="2017-08-22T16:49:53.455+02:00" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="MedicationRequest" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationRequest" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="MedicationRequest.basedOn">
+      <path value="MedicationRequest.basedOn" />
+      <definition value="The AdministrationRequest must at least point to the prescription (medicatoinRequest) or carePlan that caused the administration to be planned." />
+      <min value="1" />
+    </element>
+    <element id="MedicationRequest.groupIdentifier">
+      <path value="MedicationRequest.groupIdentifier" />
+      <definition value="This element is used in cases of:&#xD;&#xA;- Several medications to be taken together or not at all&#xD;&#xA;- A complex interval administration" />
+    </element>
+    <element id="MedicationRequest.intent">
+      <path value="MedicationRequest.intent" />
+      <fixedCode value="instance-order" />
+    </element>
+  </differential>
+</StructureDefinition>

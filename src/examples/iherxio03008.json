@@ -1,0 +1,63 @@
+{
+	"resourceType" : "MedicationRequest",
+	"id" : "iherxio03008",
+	"meta" : {
+		"tag" : [{
+				"code" : "ihe"
+			}
+		]
+	},
+	"identifier" : [{
+			"value" : "iherxio03008"
+		}
+	],
+	"definition" : [{
+			"reference" : "ActivityDefinition/example"
+		}
+	],
+	"basedOn" : [{
+			"reference" : "MedicationRequest/iherx003"
+		}, {
+			"reference" : "CarePlan/ihe_careplan_003"
+		}
+	],
+	"groupIdentifier" : {
+		"value" : "34301248"
+	},
+	"status" : "draft",
+	"intent" : "instance-order",
+	"medicationReference" : {
+		"reference" : "Medication/ihemed0191"
+	},
+	"subject" : {
+		"reference" : "Patient/ihepat0333",
+		"display" : "Sandra Salut"
+	},
+	"authoredOn" : "2017-02-08",
+	"dosageInstruction" : [{
+			"sequence" : 1,
+			"text" : "single dose",
+			"timing" : {
+				"event" : ["2017-08-15"],
+				"repeat" : {
+					"count" : 1,
+					"when" : ["PCD"]
+				}
+			},
+			"route" : {
+				"coding" : [{
+						"system" : "http://snomed.info/sct",
+						"code" : "255559005",
+						"display" : "Oral"
+					}
+				]
+			},
+			"doseQuantity" : {
+				"value" : 1,
+				"unit" : "comprimé",
+				"system" : "https://standardterms.edqm.eu/browse/get_concepts/UOP",
+				"code" : "tbl"
+			}
+		}
+	]
+}

@@ -1,0 +1,8 @@
+#guidename must match the id of the implementation guide
+guidename=ihe_ig
+copyrightyear=2015+
+version=2.0
+fhirspec=http://hl7.org/implement/standards/fhir/
+#excludexml=Yes
+#excludejson=Yes
+#excludettl=Yes

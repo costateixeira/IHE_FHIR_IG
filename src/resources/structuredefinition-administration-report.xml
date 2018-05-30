@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+ <id value="administration-report"/>
+ <url value="http://ihe.net/fhir/profiles/mma/StructureDefinition/administration-report" />
+  <name value="AdministrationReport" />
+  <status value="draft" />
+  <date value="2017-08-22T16:50:12.245+02:00" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="MedicationAdministration" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="MedicationAdministration.performer">
+      <path value="MedicationAdministration.performer" />
+      <min value="1" />
+    </element>
+    <element id="MedicationAdministration.dosage.dose">
+      <path value="MedicationAdministration.dosage.dose" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>
